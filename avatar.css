@@ -59,3 +59,7 @@
 .visivel {
   visibility: visible;
 }
+
+.escondido{
+  visibility: hidden;
+}

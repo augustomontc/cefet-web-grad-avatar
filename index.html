@@ -42,6 +42,34 @@
         <h2>Controles</h2>
         <div>
           <!-- coloque os controles aqui -->
+          <p>Nome: 
+            <input id="nome" type="text" maxlength="50" onchange="setName()"></p>
+          <p>Cor da pele:  
+            <input id="cor" type="color" value="#000000" name="cor" required onchange="setColor(cor.value)"></p>
+
+        <div class="campo">
+          <p>Cabelo:
+            <select id="tipo_cabelo" onchange="setCabelo(tipo_cabelo.value)">
+                <option value="imgs/cabelo-careca.png">Careca</option>
+                <option value="imgs/cabelo-alaranjado-curto.png">Alaranjado curto</option>
+                <option value="imgs/cabelo-azul-longo.png">Azul longo</option>
+                <option value="imgs/cabelo-cabelo-marrom-curto.png">Marrom curto</option>
+                <option value="imgs/cabelo-preto-medio.png">Preto medio</option>
+                <option value="imgs/cabelo-roxo-curto.png">Roxo curto</option>
+                <option value="imgs/cabelo-verde-medio.png">Verde medio</option></p>
+            </select>
+        </div>
+
+        <div class="campo">
+            <label><input id="oculos" type="checkbox" name="oculos" onchange="setOculos(oculos.checked)">Oculos de grau</label>
+        </div>
+         <div class="campo">
+            <label><input id="lacinhos" type="checkbox" name="lacinhos" onchange="setLacinho(lacinhos.checked)">Lacinhos Vermelhos</label>
+        </div>
+         <div class="campo">
+            <label><input id="bandana" type="checkbox" name="bandana" onchange="setBandana(bandana.checked)">Bandana Amarela</label>
+        </div>
+
         </div>
       </section>
       <section id="secao-instrucoes">
